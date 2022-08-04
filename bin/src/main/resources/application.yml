@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: ecommerce
+  devtools:
+    livereload:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/student
+    username: root
+    password: Hana1q2w3e4r5t
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        '[format_sql]': true
+        '[use_sql_comments]': true
+        '[generate_statistics]': true
